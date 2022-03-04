@@ -1,1 +1,1 @@
-scripts that swiches the current user to the user betty
+script that print effective user name of the current use
