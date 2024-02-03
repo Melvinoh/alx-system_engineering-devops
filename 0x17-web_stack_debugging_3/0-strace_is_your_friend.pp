@@ -1,8 +1,5 @@
-# Fix Apache error 500
-
-exec { 'fix-wordpress':
-  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
-  path    => '/usr/local/bin/:/bin/'
+# puppet file to automate a 500 error fix
+exec { 'fixed-phpp':
+  command => "sed -i 's/phpp/php/g' /var/www/html/wp-settings.php",
+  path    => '/bin';
 }
-Footer
-© 2022 Git
